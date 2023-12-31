@@ -40,7 +40,6 @@ def log(msg: str, iserror=False):
     save(log_msg)  # Saving log message to a text file
     if iserror:
         save_error(log_msg)  # Saving error message to a separate text file if 'iserror' is True
-
 # Function to save logs to a text file
 def save(msg):
     now = datetime.now()

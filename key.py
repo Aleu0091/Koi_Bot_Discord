@@ -1,6 +1,5 @@
 # Discord Bot Token
-discord_key = "MTE5MDYzMjA2ODE2MjUzMTMyOA.GGcwZC.YL1CmSqp1HWIEkZKVQRhKAJSrnYDwIjOieXbyg"
-
+discord_key = "Your_Bot_Token"
 # Neis API Token and URL(Change SC_CODE ansd SCHUL_CODE that match your school)
 #Will disapper 
 SC_CODE = "Your_Code"
@@ -10,9 +9,9 @@ meal_key = "&KEY=Your_Key"
 # USE f-string
 
 # SCS Server's ID
-Slash_Command_Server = ['1030403377152131082']
+Slash_Command_Server = ['Your_Guild_Id']
 
 # Debug config
 discord_key_debug = "YOUR_DEBUG_BOT_TOKEN"
 meal_key_debug = "&KEY=YOUR_DEBUG_KEY"
-Slash_Command_Server_debug = ['1030403377152131082']
+Slash_Command_Server_debug = ['YOUR_DEBUG_GUILD_ID']

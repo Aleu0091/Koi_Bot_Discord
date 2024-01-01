@@ -48,7 +48,7 @@ class Tools(commands.Cog):
             currentTime = datetime.now(TIME_ZONE)
             if (int(currentTime.hour) >= 13 and int(currentTime.hour) < 18) or (int(currentTime.hour) == 18 and int(currentTime.minute) < 30):
                 if int(currentTime.isoweekday()) >= 6:
-                   return
+                    return
                 LOGIN_URL = "https://djshs.kr/theme/s007/index/member_login.php"
                 embed = discord.Embed(title=f"대전과학고 자동 자습 신청 시스템!", color=0x0AB1C2)
                 embed.set_footer(text=f"Sented by {config.bot_name}ㆍAuto School Auto Study Command")
@@ -86,7 +86,7 @@ class Tools(commands.Cog):
         currentTime = datetime.now(TIME_ZONE)
         if int(currentTime.hour) == 6:
             if int(currentTime.isoweekday()) >= 6:
-                   return
+                return
             with open("Data/SchoolInfo.dat", "rb") as school_data:
                 school_member = pickle.load(school_data)
             for i in list(school_member.keys()):
@@ -162,7 +162,7 @@ class Tools(commands.Cog):
         currentTime = datetime.now(TIME_ZONE)
         if int(currentTime.hour) == 13:
             if int(currentTime.isoweekday()) >= 6:
-                   return
+                return
             All_Diet = True
             url = config.meal_URL + str(currentTime.year) + str(currentTime.month).zfill(2) + str(currentTime.day).zfill(2) + config.meal_key
             data = requests.get(url).json()

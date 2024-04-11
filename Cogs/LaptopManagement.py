@@ -31,7 +31,7 @@ class LapTopManagement(commands.Cog):
     # Slash command to get laptop's battery information
     @slash_command(name="battery_info", guild_ids=SCS)
     async def battery_info_command(self, ctx):
-        if await Permission.check_permission(ctx, 3):
+        if await Permission.check_permission(ctx, 2):
             return None
 
         battery = psutil.sensors_battery()
